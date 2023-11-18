@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">shakthi_project</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="email">Enter Email ID</string>
+    <string name="register">Register</string>
+    <string name="default_web_client_id">Dafault</string>
+    <string name="text1">The Shakti Yojana (scheme) is a women empowerment initiate launched by the government\nof karnataka. It aims to promote the welfare and safety of women in the state .One of the\ncomponents of the Shakti Scheme is providing free travel for women in the state-owned\nbuses. The free travel Shakti Scheme is applicable within the State to women who are\ndomicile of Karnataka. They will be able to travel in general and express bus services\noperated by State-run Road Transport Corporations. Karnataka Chief Minister Siddaramaiah,\nalong with Deputy Chief Minister D.K.Shivakumar and Transport Minister Ramalinga\nReddy, launches ‘Shakti’, a scheme which promises free travel for women in non-premiere\nservices offered by State–run Road Transport Corporations (RTCs), at the Vidhana Soudha in\nBengaluru on June 11, 2023.\n</string>
+</resources>

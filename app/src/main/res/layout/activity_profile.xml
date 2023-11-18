@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    android:background="@drawable/bg1">
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/driverProfilePic"
+            android:layout_width="264dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="60dp"
+
+            tools:srcCompat="@drawable/logo" />
+
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="358dp"
+        android:layout_height="392dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogout">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="116dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="First Name : "
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/firstNameProfile"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="#488FFB"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="116dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:text="Last Name : "
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/lastNameProfile"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="70dp"
+            android:text=""
+            android:textColor="#488FFB"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="120dp"
+            android:text="Email : "
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/emailProfile"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="120dp"
+
+            android:textColor="#488FFB"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="116dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="170dp"
+            android:text="Phone No : "
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/phoneNoProfile"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="170dp"
+            android:text=""
+            android:textColor="#488FFB"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="116dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="270dp"
+            android:text="Address : "
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/addressProfile"
+            android:layout_width="200dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="270dp"
+            android:text=""
+            android:textColor="#488FFB"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="116dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="220dp"
+            android:text="Gender  : "
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/genderProfile"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="220dp"
+            android:text=""
+            android:textColor="#488FFB"
+            android:textSize="20dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="166dp"
+        android:layout_height="54dp"
+        android:background="@drawable/input_bg"
+        android:text="Logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout4" />
+
+    <Button
+        android:id="@+id/btnVerifyEmail"
+        android:layout_width="166dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/input_bg"
+        android:text="Verify Email"
+        app:layout_constraintStart_toEndOf="@+id/btnLogout"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

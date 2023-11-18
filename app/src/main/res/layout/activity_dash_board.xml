@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashBoard"
+    android:background="@drawable/bg1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="//"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/buyTicket"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="52dp"
+                app:cardBackgroundColor="#9700BCD4"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" >
+
+                <ImageView
+                    android:id="@+id/buyTicketImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="116dp"
+                    android:src="@drawable/ticket12" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="112dp"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Buy Ticket"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:paddingStart="15dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="52dp"
+                app:cardBackgroundColor="#9700BCD4"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" >
+
+
+                <ImageView
+                    android:layout_width="135dp"
+                    android:layout_height="93dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/navigateImg"
+                    android:src="@drawable/compass3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="110dp"
+                    android:fontFamily="@font/aldrich"
+                    android:text=" Navigate "
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:paddingStart="15dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="56dp"
+                app:cardBackgroundColor="#9700BCD4"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buyTicket" >
+
+
+
+
+                <ImageView
+                    android:layout_width="135dp"
+                    android:layout_height="93dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/historyImg"
+                    android:src="@drawable/history1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="110dp"
+                    android:fontFamily="@font/aldrich"
+                    android:text="    History "
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:paddingStart="15dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="28dp"
+                app:cardBackgroundColor="#9700BCD4"
+                app:cardCornerRadius="20dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/cardView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/aldrich"
+                    android:text="About Shakthi INC"
+                    android:textAllCaps="false"
+                    android:id="@+id/shakthiAbt"
+                    android:textColor="@color/black"
+                    android:paddingStart="70dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="56dp"
+                app:cardBackgroundColor="#9700BCD4"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toEndOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                <ImageView
+                    android:id="@+id/profileImg"
+                    android:layout_width="135dp"
+                    android:layout_height="93dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="110dp"
+                    android:fontFamily="@font/aldrich"
+                    android:paddingStart="15dp"
+
+                    android:text="    Profile "
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="56dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

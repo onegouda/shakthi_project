@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ticketPage"
+    android:background="@drawable/bg1">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D2000000"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="600dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="64dp"
+            android:paddingStart="16dp"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/alegreya_sans_sc_medium"
+                android:text="Shakthi INC"
+                android:textColor="#488FFB"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Congratulations"
+                android:textColor="#FFC107"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/alegreya_sans_sc_medium"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="170dp"
+                />
+
+            <TextView
+                android:layout_width="308dp"
+                android:layout_height="86dp"
+                android:text="Thank You ! for buying Ticket From Us"
+                android:textSize="18dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginStart="25dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:text="Happy Journey From Team Shakthi"
+                android:textSize="18dp"
+                android:layout_marginTop="145dp"
+                android:layout_marginStart="25dp"
+                android:paddingStart="12dp"/>
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/qr"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="210dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Source :"
+                android:textSize="18dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="370dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/textViewSource"
+                android:textSize="18dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="370dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Destination :"
+                android:textSize="18dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="400dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/textViewDestination"
+                android:textSize="18dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="400dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Date :"
+                android:textSize="18dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="430dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/textViewDate"
+                android:textSize="18dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="430dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Ticket Fare :"
+                android:textSize="18dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="460dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/textViewFare"
+                android:textSize="18dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="460dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Shakthi Scheme :"
+                android:textSize="18dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="490dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/textViewScheme"
+                android:textSize="18dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="490dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Final Price :"
+                android:textSize="18dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="520dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/textViewFinalFare"
+                android:textSize="18dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="520dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Team Shakthi INC"
+                android:textSize="18dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="550dp"
+                android:paddingStart="75dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
